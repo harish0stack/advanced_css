@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loading h2{
+            font-size:3vw;
+            animation: blink 1s ease-in infinite alternate;
+
+        }
+       
+        @keyframes blink{
+        from {
+            color:red;
+        }
+        to{
+            color:blue;
+        }
+        }
+        .rotate-cir{
+            width:4.1vw; height:4.1vw;
+            padding:8px; border-radius: 50%; border: 5px solid rgb(171, 171, 171);
+            margin-left: 30px;  border-top: 5px solid blue;
+            animation: rotate 2s linear infinite ;
+        }
+        @keyframes rotate{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+        }
+
+        .bouncing-dot{
+            width:2.2vw; height:2.2vw; border-radius: 50%;  margin-left: 11px; margin-top:40px;
+            background-color: rgb(40, 40, 40); position: relative;
+            animation: bounce 2s infinite alternate;
+        }
+        .top{
+            animation: bounce2 2s infinite alternate;
+        }
+        .down{
+            animation: bounce3 2s infinite alternate;
+        }
+        .container{
+            display: flex; 
+        }
+        @keyframes bounce{
+        from{
+            top: 5px;
+        }to{
+            top: 30px;
+        }
+        }
+        @keyframes bounce2{
+        from{
+            top: 0px;
+        }to{
+            top: 30px;
+        }
+        }
+        @keyframes bounce3{
+        from{
+            top: 20px;
+        }to{
+            top: 10px;
+        }
+        }
+        .logo{
+            width:10vw; height: 10vw;
+            background: orange;position: relative; 
+            animation: bounce 1s infinite alternate;
+        }
+        .logo h5{
+            position: absolute; top:15px; left:20px;
+            text-align: center;
+        }
+       .progress{
+          width:20vw; height:3vw; border-radius: 20px;
+          background: rgb(180, 180, 180); 
+       }
+       .green{
+         width:19.8vw; height:2.9vw; border-radius: 20px;
+          animation: progress 2s infinite alternate;
+    
+       }
+
+       @keyframes progress{
+        from{
+            background: green;
+            width:4%;
+        }
+        to{
+            background-color: green;
+            width:100%;
+        }
+       }
+
+    </style>
+</head>
+<body>
+    <h3>Task1:Blinking Text Loader</h3>
+    <div class="loading"><h2>Loading...</h2></div>
+    <h3>Task2:rotating circular loader</h3>
+     <div class="rotate-cir"></div>
+
+     <h3>Task3:3- bounching dots</h3>
+    <div class="container">
+     <div class="bouncing-dot"></div>
+     <div class="bouncing-dot top"></div>
+     <div class="bouncing-dot down"></div>
+    </div>
+
+    <h3>Task4:floating logo</h3>
+    <div class="logo"> <h5>LOGO</h5></div>
+
+    <h3>Task5:slides progress bar</h3>
+    <div class="progress">
+        <div class="green"></div>
+    </div>
+
+
+
+    
+</body>
+</html>

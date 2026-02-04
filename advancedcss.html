@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width:100px;
+            height:100px;
+            background: red; border-radius: 50%;
+            /* animation: blink 1s infinite ; */
+            /* animation: move 2s infinite alternate; */
+            /*animation: float 2s infinite alternate; position:relative; */ 
+            animation: spin 2s linear infinite alternate;
+        }
+        /* @keyframes blink{
+        from {
+            background:red;
+        }
+        to{
+            background: blue;
+        }} */
+
+        /* @keyframes move{
+        from{
+            left:0px;
+        }
+        to{
+            left:800px;
+        }
+        } */
+        /* @keyframes float{
+        from{
+            top : 0px;
+        }
+        to{
+            top:50px;
+        }
+        } */
+
+        @keyframes spin{
+            from{transform: rotate(0deg );}
+            to{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            background: black;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .star{
+            position: absolute;
+            background: white; width:4px; height:4px;
+            border-radius: 50%;
+            animation: down-top 4s ease-in-out infinite ;
+        }
+
+        .star1{left:20%; top:40%; animation-delay: 0s;} 
+        .star2{left:40%; top:40%; animation-delay: 2s;} 
+        .star3{left:50%; top:40%; animation-delay: 1.4s;} 
+        .star4{left:80%; top:40%; animation-delay: 1.3s;} 
+        .star5{left:70%; top:40%; animation-delay: 1.4s;} 
+        .star6{left:850%; top:40%; animation-delay: 1s;} 
+        .star7{left:30%; top:40%; animation-delay: 3s;} 
+        .star8{left:90%; top:40%; animation-delay: 4s;} 
+
+        .star9{left:20%; top:40%; animation-delay: 0s;} 
+        .star10{left:80%; top:40%; animation-delay: 0.3s;} 
+        .star11{left:10%; top:40%; animation-delay: 0.6s;} 
+
+
+
+
+
+        @keyframes down-top{
+        from{top:100%;
+            opacity:0;
+        }
+        to{
+            opacity:1; top:-10%;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="star1 star"></div>
+    <div class="star2 star"></div>
+    <div class="star3 star"></div>
+    <div class="star4 star"></div>
+    <div class="star5 star"></div>
+    <div class="star6 star"></div>
+    <div class="star7 star"></div>
+    <div class="star8 star"></div>
+    <div class="star9 star"></div>
+    <div class="star10 star"></div>
+    <div class="star11 star"></div>
+    
+</body>
+</html>
